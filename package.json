@@ -1,0 +1,25 @@
+{
+  "name": "first_backend_next",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lacj2000/firstBackendNext.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lacj2000/firstBackendNext/issues"
+  },
+  "homepage": "https://github.com/lacj2000/firstBackendNext#readme",
+  "dependencies": {
+    "next": "^10.2.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
