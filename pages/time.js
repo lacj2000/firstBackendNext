@@ -1,11 +1,27 @@
-const Time = () =>{
+const Time = (props) =>{
   const dynamicDate = new Date();
   const dynamicDateString = dynamicDate.toGMTString();
-  return(
+  
+  const { staticDateString } = props;
+  
+  return( 
     <div>
-      Data dinâmica: {dynamicDateString} 
+      <div>Data dinâmica: {dynamicDateString}</div>
+      <div>Data Estática: {staticDateString}</div>
     </div>
   )
 }
+
+export function getStaticProps(){
+  const staticDate = new Date();
+  const staticDateString = staticDate.toGMTString();
+  
+  return {
+    props: {
+      staticDateString
+    }
+  }
+}
+
 
 export default Time;
